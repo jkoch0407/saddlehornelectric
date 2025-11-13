@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Contact Info</title>
+  <style>
+    @font-face {
+      font-family: 'Bronco';
+      src: url('bronco.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Bronco', serif;
+      color: #00b3b3;
+    }
+
+    body {
+      background-image: url('saddleextend.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.15);
+      z-index: 1;
+    }
+
+    .company-info {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .company-info h1 {
+      font-size: 2.7em;
+      margin: 0 0 10px;
+      letter-spacing: 0.18em;
+      transform: scaleX(1.3);
+    }
+
+    .company-info h2,
+    .company-info h3 {
+     font-size: 2.7em;
+      margin: 5px 0;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      transform: scaleX(1.3);
+    }
+
+    .italic-numbers {
+      font-style: italic;
+    }
+
+    a.email-link {
+      color: #00b3b3;
+      text-decoration: underline;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="company-info">
+    <h1>Phone: (307)247-0382</h1>
+    <h2>
+      Email: 
+      <a class="email-link" href="mailto:jkoch0407@gmail.com">
+        jkoch<span class="italic-numbers">0407</span>@gmail.com
+      </a>
+    </h2>
+  </div>
+</body>
+</html>
