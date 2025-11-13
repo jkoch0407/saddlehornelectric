@@ -14,11 +14,13 @@
 
     html, body {
       margin: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
       padding: 0;
       height: 100%;
       font-family: 'Bronco', serif;
       color: #00b3b3;
-      min-height: 100%;
+      min-height: 100vh;
     }
 
     body {
@@ -36,7 +38,7 @@
 
     body::before {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
@@ -123,3 +125,4 @@
   </div>
 </body>
 </html>
+
