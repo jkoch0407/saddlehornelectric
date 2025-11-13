@@ -32,6 +32,11 @@
       position: relative;
     }
 
+    @media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center center; /* or top center if preferred */
+   }
     body::before {
       content: "";
       position: absolute;
@@ -91,3 +96,4 @@
   </div>
 </body>
 </html>
+
